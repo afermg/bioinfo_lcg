@@ -2,7 +2,7 @@
 title: "Practice 1"
 author: "Anastasia Hernández y Alán Muñoz"
 date: "February 15, 2016"
-output: html_document
+output: pdf_document
 ---
 # Práctica 1
 
