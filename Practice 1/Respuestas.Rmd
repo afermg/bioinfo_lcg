@@ -11,13 +11,13 @@ output:
   2.1) Ejemplo de aminoácido con cadena lateral aromática
   
   
-  ![](Foldit/2\.1.png)
+  ![](Foldit/2.1.png)
   
   \newpage
   2.2) Ejemplo de aminoácido con cadena lateral chica
   
   
-  ![](Foldit/2\.2.png)  
+  ![](Foldit/2.2.png)  
   ***
   2.3) Ejemplo de giro en torno a los ángulos phi/psi de un residuo seleccionado, que pasa cuando si sus vecinos tienen cadenas laterales voluminosas?
   
