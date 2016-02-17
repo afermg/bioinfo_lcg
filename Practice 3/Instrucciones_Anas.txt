@@ -1,0 +1,17 @@
+1. Descargar Secuencias
+2. Descargar pdb
+3. Revisar que correspondan:
+	grep CA name.pdb | cut -c18-20 > name.seqaa 
+	perl traduct.pl name.seqaa > name.tocompare
+	diff name.fa name.tocompare -i ??
+4. Concatenar para alinear
+	cat *.fa > seqs_cat.fa
+5. Alinear en Clustal 
+	http://www.ch.embnet.org/software/ClustalW.html
+6. Alinear con MAMMOTH los .pdb
+	~/algoritmos3D/soft/mammoth-1.0-src/mammoth -p name1.pdb -e name2.pdb -o name1_name2.out
+7. Leer con Rasmol la superposición
+	rasmol -script rasmol.tcl	
+
+
+**Instalar MAMMOTH
