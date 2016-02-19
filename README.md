@@ -1,7 +1,7 @@
 # Github para Prácticas de curso de Bioinformática
 ##Licenciatura en Ciencias Genómicas
 
-###Bruno Contreras Moreira
+##Bruno Contreras Moreira
 
 Alumnos:
 
