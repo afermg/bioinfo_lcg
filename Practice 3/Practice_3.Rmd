@@ -28,10 +28,10 @@ output:
 	http://www.ch.embnet.org/software/ClustalW.html
 	
 6. Alinear con MAMMOTH los .pdb
-	~/algoritmos3D/soft/mammoth-1.0-src/mammoth -p seqs/pdb/name1.pdb -e seqs/pdb/name2.pdb -o name1_name2.out
+  	~/algoritmos3D/soft/mammoth-1.0-src/mammoth -p seqs/pdb/name1.pdb -e seqs/pdb/name2.pdb -o seqs/als/name1_name2.al
 	
 7. Leer con Rasmol la superposición
-	rasmol -script rasmol.tcl	
+	rasmol -script seqs/als/rasmol.tcl	
 	
 
 8. *Comparar estructura secundaria

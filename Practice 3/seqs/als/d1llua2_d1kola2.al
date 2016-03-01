@@ -1,55 +1,92 @@
-########################################
-# Program: water
-# Rundate: Wed 17 Feb 2016 17:08:42
-# Commandline: water
-#    -auto
-#    -stdout
-#    -asequence emboss_water-I20160217-170841-0942-44084947-oy.aupfile
-#    -bsequence emboss_water-I20160217-170841-0942-44084947-oy.bupfile
-#    -datafile EBLOSUM62
-#    -gapopen 10.0
-#    -gapextend 0.5
-#    -aformat3 pair
-#    -sprotein1
-#    -sprotein2
-# Align_format: pair
-# Report_file: stdout
-########################################
-
-#=======================================
-#
-# Aligned_sequences: 2
-# 1: d1kola2
-# 2: d1llua2
-# Matrix: EBLOSUM62
-# Gap_penalty: 10.0
-# Extend_penalty: 0.5
-#
-# Length: 151
-# Identity:      35/151 (23.2%)
-# Similarity:    63/151 (41.7%)
-# Gaps:          28/151 (18.5%)
-# Score: 82.0
-# 
-#
-#=======================================
-
-d1kola2            8 sdilp------tgyhgavtagvgpgstvyvagagpvglaaaasarllgaa     51
-                     ::|.|      |.|.|.......||..|.::|.|.:|..|...||.:|..
-d1llua2            4 aeiapilcagvtvykglkqtnarpgqwvaisgigglghvavqyaramglh     53
-
-d1kola2           52 vvivgdlnparlahakaqgfeiadlsldtplheqiaallgepevdca---     98
-                     |..: |::.|:|..|:..|   |.|:::....:.:.|:  :.::..|   
-d1llua2           54 vaai-diddaklelarklg---asltvnarqedpveai--qrdiggahgv     97
-
-d1kola2           99 -vdavgfearghghegakh------------eapatvlnslmqvtrvagk    135
-                      |.||...|.|.....|:.            :.|..:.:.:::...:||.
-d1llua2           98 lvtavsnsafgqaigmarrggtialvglppgdfptpifdvvlkglhiags    147
-
-d1kola2          136 i    136
-                     |
-d1llua2          148 i    148
+ Predicted path:   
+ Experimental path:
+ _______________________________________________________________________________
 
 
-#---------------------------------------
-#---------------------------------------
+                      T U R B O     M  A  M  M  O  T  H
+
+
+               MAtching Molecular Models Obtained from THeory
+
+ _______________________________________________________________________________
+
+  
+
+ -------------------
+  Input information 
+ -------------------
+  
+
+==> PREDICTION: 
+
+     Filename: seqs/pdb/d1llua2.pdb
+     Number of residues:   166
+
+
+==> EXPERIMENT: 
+
+     Filename: seqs/pdb/d1kola2.pdb
+     Number of residues:   195
+
+  
+ -----------------------------
+  Structural Alignment Scores 
+ -----------------------------
+  
+
+ PSI(ini)=   98.19  NALI= 163  NORM= 166  RMS=    4.43  NSS= 145
+ PSI(end)=   92.17  NALI= 153  NORM= 166  RMS=    2.74
+ Sstr(LG)= 2729.32  NALI= 153  NORM= 166  RMS=    2.74
+
+E-value=     0.12580023E-08
+
+Z-score=      21.438439        -ln(E)=      20.493741    
+  
+ ----------------------------
+  Final Structural Alignment 
+ ----------------------------
+  
+             ******** ********** ********** ********** **********
+Prediction VEFAEIAPIL CAGVTVYKGL KQTNARPGQW VAISGIGGLG HVAVQYARAM
+Prediction HHHHHHHHHH HHHHHHHHHH HH-SS----S SSSSS----H HHHHHHHH--
+             |||||||| |||||||||| |||||||||| |||||||||| ||||||||||
+Experiment --HHHHHHHH HHHHHHHHHH H--SS----S SSSS-----H HHHHHHHH--
+Experiment ..IRDLTCLS DILPTGYHGA VTAGVGPGST VYVAGAGPVG LAAAASARLL
+             ******** ********** ********** ********** **********
+  
+            ********* ********** ********** *********    ******* 
+Prediction .GLHVAAIDI DDAKLELARK LGASLTVNAR QEDPVEAIQ. .RDIGGAHG.
+Prediction ---SSSSS-- ---HHHHHH- ----SSSS-- --HHHHHHH- -H--SSS---
+            ||||||||| |||||||||| |||      | |||||||||   |||||||| 
+Experiment ---SSSSS-- ---HHHHHH- ---SSSS--- -HHHHHHHHH ----SSSSSS
+Experiment GAAVVIVGDL NPARLAHAKA QGFEIADLSL DTPLHEQIAA LLGEPEVDCA
+            ********* ********** ********** *********    ******* 
+  
+                               *  ********* *********      **    
+Prediction ......V... ....LVTAVS .NSAFGQAIG MARRGGTIA. ....LVG...
+Prediction ------S--- ----SSS--- --HHHHHHHH HH----SSS- ----SS----
+                 |        ||||||  ||||||||| |||||||||       ||   
+Experiment SSSS---SSS -----HHHHH HHHHHHHHHH HH----SSSS SSSSS-----
+Experiment VDAVGFEARG HGHEGAKHEA PATVLNSLMQ VTRVAGKIGI PGLYVTEDPG
+                               *  ********* *********      **    
+  
+                  *** ********** ********** ********** ******
+Prediction .....LPPGD FPTPIFDVVL KGLHIAGSIV GTRADLQEAL DFAGEG
+Prediction ---------S SSSSSSSSS- --SSSSSSSS SS--HHHHHH HHHHHH
+                ||||| |||||||||| ||||   |   ||||||||||       
+Experiment ----SS---S SSSSSSSSS- --HHHHHHHH HHHHHHHHHH HHHHHH
+Experiment AVDAAAKIGS LSIRFGLGWA KSHSFHTGQT PVMKYNRALM QAIMWD
+                  *** ********** ********** ********** ******
+  
+  
+ ---------
+  Timings 
+ ---------
+  
+   < Initialization:                      0.004 sec >
+   < Secondary Structure assignment       0.000 sec >
+   < Structure alignment:                 0.012 sec >
+   < Tertiary structure matching:         0.004 sec >
+   < Text Output                          0.000 sec >
+  
+<MAMMOTH> NORMAL_EXIT
