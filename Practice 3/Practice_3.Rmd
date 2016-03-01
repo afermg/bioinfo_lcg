@@ -9,16 +9,21 @@ output:
   # Práctica 3
   
 1. Descargar Secuencias
-  Guardadas como name.fa
+  Guardadas como seqs/fasta/name.fa
+  
 2. Descargar pdb
-  Guardadas como name.pdb
+  Guardadas como seqs/pdb/name.pdb
+  
 3. Revisar que correspondan:
-	grep CA name.pdb | cut -c18-20 > name.seqaa 
-	perl traduct.pl name.seqaa > name.tocompare
+	grep CA seqs/pdb/name.pdb | cut -c18-20 > seqs/aa/seqsname.seqaa 
+	perl traduct.pl seqs/aa/name.seqaa > seqs/tocompare/name.tocompare
 	Linearizar Fasta (Manualmente) **Script pendiente**
+	
 	diff name.fa name.tocompare -i
+	
 4. Concatenar para alinear
-	cat *.fa > seqs_cat.fa
+	cat seqs/fasta/*.fa > seqs/concat/seqs_cat.fa
+	
 5. Alinear en Clustal 
 	http://www.ch.embnet.org/software/ClustalW.html
 6. Alinear con MAMMOTH los .pdb
