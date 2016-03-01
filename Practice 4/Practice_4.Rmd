@@ -1,12 +1,12 @@
 ---
-  title: "Practice 1"
+  title: "Practice 4"
 author: "Anastasia Hernández y Alán Muñoz"
 date: "February 15, 2016"
 output: 
   pdf_document: 
   latex_engine: xelatex
 ---
-  # Práctica 1
+  # Práctica 4
   
 De la superfamilia NAD(P)-binding Rossmann-fold domains, se elige la secuencia de d1llua2, 
 obtenida de: <http://scop.berkeley.edu/sunid=91065>.
