@@ -15,8 +15,8 @@ output:
   Guardadas como seqs/pdb/name.pdb
   
 3. Revisar que correspondan:
-	grep CA seqs/pdb/name.pdb | cut -c18-20 > seqs/aa/seqsname.seqaa 
-	perl traduct.pl seqs/aa/name.seqaa > seqs/tocompare/name.tocompare
+	scripts/filter.sh
+	perl scripts/traduct.pl seqs/aa/name.seqaa > seqs/tocompare/name.tocompare
 	Linearizar Fasta (Manualmente) **Script pendiente**
 	
 	diff name.fa name.tocompare -i
@@ -28,7 +28,7 @@ output:
 	http://www.ch.embnet.org/software/ClustalW.html
 	
 6. Alinear con MAMMOTH los .pdb
-	~/algoritmos3D/soft/mammoth-1.0-src/mammoth -p name1.pdb -e name2.pdb -o name1_name2.out
+	~/algoritmos3D/soft/mammoth-1.0-src/mammoth -p seqs/pdb/name1.pdb -e seqs/pdb/name2.pdb -o name1_name2.out
 	
 7. Leer con Rasmol la superposición
 	rasmol -script rasmol.tcl	
