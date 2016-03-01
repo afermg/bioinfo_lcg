@@ -26,16 +26,13 @@ output:
 	
 5. Alinear en Clustal 
 	http://www.ch.embnet.org/software/ClustalW.html
+	
 6. Alinear con MAMMOTH los .pdb
 	~/algoritmos3D/soft/mammoth-1.0-src/mammoth -p name1.pdb -e name2.pdb -o name1_name2.out
+	
 7. Leer con Rasmol la superposición
 	rasmol -script rasmol.tcl	
-8. *Convertir alineamientos al mismo formato
-9. *Hacer Script para comparar estructura secundaria
-10. * Hacer script
+	
 
+8. *Comparar estructura secundaria
 
-**Instalar MAMMOTH**
-	(código en readme de mammoth)
-**Instalar Rasmul**
-	sudo apt-get install rasmul
