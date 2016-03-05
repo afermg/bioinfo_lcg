@@ -1,0 +1,80 @@
+---
+title: "Práctica 1"
+author: "Anastasia Hernández y Alán Muñoz"
+date: "February 15, 2016"
+output:
+  word_document: default
+  latex_engine: xelatex
+  pdf_document: null
+  html_document: default
+---
+  # Práctica 1
+  
+
+  2.1) Ejemplo de aminoácido con cadena lateral aromática
+  
+  ![](2.1.png)
+  
+  
+  
+  
+  2.2) Ejemplo de aminoácido con cadena lateral chica
+  
+  ![](2.2.png)
+    
+    
+    
+  2.3) Ejemplo de giro en torno a los ángulos phi/psi de un residuo seleccionado, que pasa cuando si sus vecinos tienen cadenas laterales voluminosas?
+  
+  = Si sus vecinos tienen cadenas laterales voluminosas, al realizar el giro se pueden observar choques entre el residuo que lo realiza y los demás, provocando 'clashes' entre ellos.
+  
+  ![](3.1.png)
+  ![](3.2.png)
+  
+  
+  
+  2.4) Ejemplo de puentes de hidrógeno entre resíduos de una alfa-hélice y entre hojas de una lámina beta. Desde el punto de vista algorítmico, cuál de los estados de estructura secundaria les parece más difícil de programar?  
+  
+  = De los estados de estructura secundaria, sería más dificil de programar a las alfa-hélices, ya que no puede predecirse con las sustancias o estructuras a su alrededor; a diferencia de las beta-plegadas que son más fácilmente reconocidas por su relación muy cercana con estructuras como los puentes de hidrógeno.
+  
+  ![](2.41.png)
+  ![](2.42.png)
+  
+  
+  
+  2.5) Ejemplo de residuo hidrofóbico expuesto y luego correctamente "enterrado" tras operaciones con los vecinos.
+  
+  ![](2.51.png)
+  ![](2.52.png)
+  
+  
+  2.6) Ejemplo de conformaciones distintas con puntuaciones similares, para hacer patente el problema de evaluar lo correcto de una conformación.
+  ![](2.61.png)
+  ![](2.62.png)
+  
+  
+  2.7) De acuerdo con http://eead-csic-compbio.github.io/bioinformatica_estructural/node17.html calcula el tiempo que llevaría explorar todas las conformaciones posibles de uno de los péptidos o proteínas que utilicen en los puzzles.
+  
+  
+ = X estados diferentes: 2 (promedio por cada aminoácido)
+   Número de aminoácidos: 17
+   Tiempo de cambio de estado: t
+   Tiempo corto de cambio de estado     (considerando el tamaño pequeño de la              estructura): 10^13 s
+   
+   Tiempo (en segundos) para explorar todos los estados: 
+   
+```{r}
+Texp=(10^13)*(17^100)
+Texp 
+```
+   
+  ![](levin.png)
+  
+  
+  
+  
+  
+Nivel obtenido en el programa
+  
+  ![](lev.png)
+  
