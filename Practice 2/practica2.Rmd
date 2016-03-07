@@ -3,10 +3,10 @@ title: "Práctica 2"
 author: "Anastasia Hernández y Alán Muñoz"
 date: "February 15, 2016"
 output:
-  html_document: default
+  word_document: default
   latex_engine: xelatex
   pdf_document: null
-  word_document: default
+  html_document: default
 ---
   # Práctica 2
   
@@ -307,7 +307,7 @@ plot(x=-350:-100,D[x,], col="blue", main = "Sample D Value", type="l",xlab = "Po
 Promedio de todas las secuencias.
 ```{r}
 par(mfrow=(c(2,1)))
-plot(x=-350:-100,apply(E1,2,mean), col="green", type="l",ylim=c(-18,-14), ylab="Value",main = "E1 and E2 Mean Values")
+plot(x=-350:-100,apply(E1,2,mean), col="green", type="l",xlim=c(-365,-100),ylim=c(-18,-14), ylab="Value",main = "E1 and E2 Mean Values")
 legend("topleft", c("E1","E2"),lty=1,col=c("green","red"),bty="n",cex=0.6, y.intersp = 1,x.intersp=0.2)
 lines(x = -350:-100,apply(E2,2,mean),col="red")
 plot(x=-350:-100,apply(D,2,mean), col="blue", main = "D mean Values", type="l",ylab="Value")
