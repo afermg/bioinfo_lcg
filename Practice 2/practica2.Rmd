@@ -3,9 +3,9 @@ title: "Práctica 2"
 author: "Anastasia Hernández y Alán Muñoz"
 date: "February 15, 2016"
 output:
-  pdf_document: null
-  latex_engine: xelatex
   html_document: default
+  latex_engine: xelatex
+  pdf_document: null
   word_document: default
 ---
   # Práctica 2
@@ -295,17 +295,20 @@ promoters <- read.table("Data/predicted_promoters.txt", header=T)
 
 Muestrear una secuencia.
 ```{r}
+
 par(mfrow=(c(2,1)))
 x <- sample(1:84,1)
-plot(x=-350:-100,E1[x,], col="green", type="l",xlab = "Position", ylab="Value",main = "Sample E1 and E2 Values")
+plot(x=-350:-100,E1[x,], col="green", type="l",xlab = "Position", ylab="Value",main = "Sample E1 and E2 Values",xlim=c(-365,-100),ylim=c(min(E1[x,],E2[x,]),max(E1[x,],E2[x,])))
 lines(x = -350:-100,E2[x,],col="red")
-plot(x=-350:-100,D[x,], col="blue", main = "Sample D Value", type="l",xlab = "Position",ylab="Value")
+legend("topleft", c("E1","E2"),lty=1,col=c("green","red"),bty="n",cex=0.5, y.intersp = 1,x.intersp=0.2)
+plot(x=-350:-100,D[x,], col="blue", main = "Sample D Value", type="l",xlab = "Position",ylab="Value",xlim=c(-400,-100))
 ```
 
 Promedio de todas las secuencias.
 ```{r}
 par(mfrow=(c(2,1)))
 plot(x=-350:-100,apply(E1,2,mean), col="green", type="l",ylim=c(-18,-14), ylab="Value",main = "E1 and E2 Mean Values")
+legend("topleft", c("E1","E2"),lty=1,col=c("green","red"),bty="n",cex=0.6, y.intersp = 1,x.intersp=0.2)
 lines(x = -350:-100,apply(E2,2,mean),col="red")
 plot(x=-350:-100,apply(D,2,mean), col="blue", main = "D mean Values", type="l",ylab="Value")
 ```
@@ -324,7 +327,7 @@ hist(promoters$Pos-400,xlim = c(-400,50),ylab="Frequency",xlab="Position in Sequ
 
 Además del método para obtener falsos positivos descrito en el artículo basado en buscar overlaps de 200 nucleótidos en la región -150 a 50 de la secuencia analizada, con RSAT, podrían realizarse diversas pruebas mejorando únicamente los valores de sensibilidad (que reflejará la capacidad del estimador para detectar verdaderos positivos, indicando de la misma forma su comportamiento con los falsos positivos) y con la herramienta matrix-scan podemos buscar los sitios de pegado de los factores de transcripción, y buscar si estos corresponden a las regiones promotoras encontradas por el algoritmo.
 
-En la figura 7 del artículo, puede observarse que los valores de los resultados mejoran al ampliar el tamaño de la ventana de selección ##asd##
+En la figura 7 del artículo, puede observarse que los valores de los resultados mejoran al ampliar el tamaño de la ventana de selección.
 
 
 
